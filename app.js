@@ -9,7 +9,6 @@ const botOptions = ["Rock", "Paper", "Scissors"]
 
 decisionDisplay.style.display = 'none'
 
-
 function botDecides () {
     var botDecision = botOptions[
         Math.floor(
@@ -18,24 +17,35 @@ function botDecides () {
     ]
 
     botDecisionDiv.textContent = botDecision
+
+    return botDecision
 }
 
 function decisionMade (e) {
     cl(e.target.id)
-    userDecision.textContent = e.target.id
-    console.log('decision made')
-    console.log(opts)
+
+    let userPick = e.target.id
+    userDecision.textContent = userPick
+
     userDiv.style.display = 'none'
     decisionDisplay.style.display = 'block'
 
-    botDecides()
+    let botPick = botDecides()
+
+    if (userPick == botPick) {
+        cl("match")
+    } else if (
+        userPick == "Rock" && botPick == "Scissors" ||
+        userPick == "Paper" && botPick == "Rock" ||
+        userPick == "Scissors" && botPick == "Paper"
+    ) {
+        cl("you win")
+    } else {
+        cl("bot wins")
+    }
+
 }
 
 for (var i=0;i<options.length;i++) {
     opts[i].addEventListener('click', decisionMade)
 }
-
-console.log(options) // NodeList
-console.log(opts) // List
-
-cl(botDecision)
