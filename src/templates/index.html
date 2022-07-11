@@ -1,22 +1,17 @@
 <div class="container pb-3">
     
-    
-    <!-- <div class="pb-3">
-        <button class="btn btn-danger" id="h2">Play</button>
-    </div> -->
-    
         <div class="row p-3">
-            <div class="player col bg-secondary p-2 m-2 rounded">
+            <div class="player col bg-secondary bg-gradient p-2 m-2 rounded">
                 <div class="user">
                     <h2>Choose</h2>
                     <hr class="dropdown-divider">
     
-                    <button class="option btn btn-danger" id="Rock" type="button">Rock</button>
-                    <button class="option btn btn-danger" id="Paper" type="button">Paper</button>
-                    <button class="option btn btn-danger" id="Scissors" type="button">Scissors</button>
+                    <div class="option btn btn-primary" id="Rock" type="button">Rock</div>
+                    <div class="option btn btn-primary" id="Paper" type="button">Paper</div>
+                    <div class="option btn btn-primary" id="Scissors" type="button">Scissors</div>
                 </div>
                 <div id="decisionDisplay">
-                    <h2>You picked:</h2>
+                    <h2>You picked</h2>
                     <hr class="dropdown-divider">
     
                     <div>
@@ -25,8 +20,8 @@
                 </div>
             </div>
     
-            <div class="bot col bg-primary p-2 m-2 rounded">
-                <h2>Computer picked:</h2>
+            <div class="bot col bg-primary bg-gradient p-2 m-2 rounded">
+                <h2>Computer picked</h2>
                 <hr class="dropdown-divider">
                 <div>
                     <button id="botDecision" class="btn btn-danger mx-auto"></button>
@@ -34,8 +29,7 @@
             </div>
         </div>
     
-        <div class="bg-secondary rounded-pill p-3 w-50 mx-auto">
-            <h3 id="result">Result</h3>
+        <div id="result" class="bg-secondary rounded-pill p-3 w-50 mx-auto">
         </div>
     
         <div class="resetDiv p-3">

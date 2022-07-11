@@ -1,4 +1,5 @@
 const cl = console.log
+
 const userDiv = document.querySelector('.user')
 const h2 = document.querySelector('#h2')
 const resetDiv = document.querySelector('.resetDiv')
@@ -8,7 +9,7 @@ const userDecision = document.getElementById('userDecision')
 const decisionDisplay = document.querySelector('#decisionDisplay')
 const botDecisionDiv = document.querySelector('#botDecision')
 const options = document.querySelectorAll('.option')
-const opts = Array.from(options)
+const userOptions = Array.from(options)
 const botOptions = ["Rock", "Paper", "Scissors"]
 
 decisionDisplay.style.display = 'none'
@@ -19,7 +20,7 @@ resetButton.addEventListener("click", function(){
     resetDiv.style.display = 'none'
     userDiv.style.display = 'block'
     decisionDisplay.style.display = 'none'
-    resultDisplay.textContent = 'Result'
+    resultDisplay.textContent = ''
     // h2.style.display = 'block'
     botDecisionDiv.style.display = 'none'
 })
@@ -67,5 +68,5 @@ function decisionMade (e) {
 }
 
 for (var i=0;i<options.length;i++) {
-    opts[i].addEventListener('click', decisionMade)
+    userOptions[i].addEventListener('click', decisionMade)
 }
