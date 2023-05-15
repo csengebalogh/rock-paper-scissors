@@ -3,10 +3,28 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csengebalogh/rock-paper-scissors.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csengebalogh/rock-paper-scissors/issues"
+  },
+  "homepage": "https://github.com/csengebalogh/rock-paper-scissors#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
