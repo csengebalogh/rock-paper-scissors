@@ -7,3 +7,11 @@ In this version, you play against the computer. Once you pick, the computer pick
 ## Sources 
 
 https://www.cim.mcgill.ca/~siddiqi/COMP-102-2014/03Logic.pdf
+
+## TODO
+
+- include reset function
+- build frontend style
+- collect info about the game and its logic (interesting facts)
+- include credits & github access
+- make rock paper scissors lizard Spock version
